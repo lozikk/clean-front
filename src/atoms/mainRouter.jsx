@@ -1,14 +1,13 @@
 import React from 'react'
-import { Switch, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import WelcomePage from '../pages/welcomePage'
 
-const mainRouter = () => {
+function MainRouter() {
   return (
-    <Switch>
-      <Route exact path='/'>
-        <WelcomePage />
-      </Route>
-    </Switch>
+    <Routes>
+      <Route path='/' element={<WelcomePage />} />
+    </Routes>
   )
 }
-export default mainRouter
+
+export default MainRouter
