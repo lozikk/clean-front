@@ -1,9 +1,9 @@
 import React from 'react'
 import './App.css'
-import WelcomePage from './pages/welcomePage'
+import AdminPage from './pages/adminPage'
 
 function App() {
-  return <WelcomePage />
+  return <AdminPage />
 }
 
 export default App
